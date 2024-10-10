@@ -1,11 +1,19 @@
-#include <TurboHybridEngine/dummy.h>
+#include <TurboHybridEngine/TurboHybridEngine.h>
 
-#include <iostream>
+using namespace TurboHybridEngine;
+
+struct Player : Component {
+	int m_dummy;
+};
 
 int main() {
-	std::cout << "hello world" << std::endl;
+	std::shared_ptr<Core> core = Core::initialize();
 
-	dummy();
+	std::shared_ptr<Entity> entity = core->add_entity();
+
+	std::shared_ptr<Player> p = entity->add_component<Player>();
+
+	core->run();
 
 	return 0;
 }

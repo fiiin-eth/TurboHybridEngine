@@ -7,7 +7,10 @@ include_directories(
 )
 
 add_library(TurboHybridEngine
- src/TurboHybridEngine/dummy.cpp src/TurboHybridEngine/dummy.h
+ src/TurboHybridEngine/Core.cpp src/TurboHybridEngine/Core.h
+ src/TurboHybridEngine/TurboHybridEngine.h
+ src/TurboHybridEngine/Entity.cpp src/TurboHybridEngine/Entity.h
+ src/TurboHybridEngine/Component.h
 )
 
 add_executable(demo
