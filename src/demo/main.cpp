@@ -3,7 +3,18 @@
 using namespace TurboHybridEngine;
 
 struct Player : Component {
+
+	void on_initialize() {
+		printf("initialized\n");
+	}
+private:
 	int m_dummy;
+
+	void on_tick() {
+		printf("tick\n");
+	}
+
+
 };
 
 int main() {
