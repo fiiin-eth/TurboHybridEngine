@@ -17,6 +17,7 @@ add_library(rend
 	src/rend/Mesh.cpp src/rend/Mesh.h
 	src/rend/ShaderProgram.cpp src/rend/ShaderProgram.h
 	src/rend/Model.h
+	src/rend/Rend.h
 )
 
 target_link_libraries(rend SDL2 glew32 OpenGL32)
@@ -28,6 +29,7 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/Component.h src/TurboHybridEngine/Component.cpp
  src/TurboHybridEngine/Transform.h src/TurboHybridEngine/Transform.cpp
  src/TurboHybridEngine/Window.h src/TurboHybridEngine/Window.cpp
+ src/TurboHybridEngine/TriangleRenderer.h src/TurboHybridEngine/TriangleRenderer.cpp
 )
 
 target_link_libraries(TurboHybridEngine rend)

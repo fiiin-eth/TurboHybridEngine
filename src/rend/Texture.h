@@ -4,19 +4,21 @@
 
 #include <string>
 #include <vector>
+namespace Render {
+	struct Texture
+	{
+		Texture(const std::string& _path);
+		~Texture();
 
-struct Texture 
-{
-	Texture(const std::string& _path);
-	~Texture();
+		GLuint getid();
 
-	GLuint getid();
+	private:
+		std::vector<unsigned char> m_data;
+		GLuint m_id;
+		int m_width;
+		int m_height;
+		bool m_dirty;
+	};
 
-private:
-	std::vector<unsigned char> m_data;
-	GLuint m_id;
-	int m_width;
-	int m_height;
-	bool m_dirty;
-};
+}
 #endif
