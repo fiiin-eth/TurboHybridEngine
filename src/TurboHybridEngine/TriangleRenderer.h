@@ -6,17 +6,18 @@ namespace TurboHybridEngine {
 
 
 	struct TriangleRenderer : Component {
-
+	public:
 		TriangleRenderer();
+		void on_render();
 
 	private:
 		Render::Model m_model;
 		Render::Mesh m_mesh;
 		Render::Texture m_texture;
 		Render::Shader m_shader;
-		Render::Face m_face;
+		//Render::Face m_face;
 
-		void on_render();
+
 
 	};
 

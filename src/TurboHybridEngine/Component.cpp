@@ -10,4 +10,8 @@ namespace TurboHybridEngine {
 		on_tick();
 	}
 
+	void Component::render() {
+		on_render();
+	}
+
 }

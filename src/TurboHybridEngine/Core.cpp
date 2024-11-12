@@ -68,7 +68,7 @@ namespace TurboHybridEngine {
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 			for (size_t ei = 0; ei < m_entities.size(); ++ei) {
-				//m_entities.at(ei)->render();
+				m_entities.at(ei)->render();
 			}
 
 			SDL_GL_SwapWindow(m_window->m_raw);
