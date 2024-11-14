@@ -12,5 +12,8 @@ namespace TurboHybridEngine {
 #include "Component.h"
 #include "Transform.h"
 #include "TriangleRenderer.h"
+#include "Texture.h"
+#include "Resource.h"
+#include "Resources.h"
 
 #endif

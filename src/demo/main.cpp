@@ -27,6 +27,10 @@ int main() {
 
 	entity->add_component<TriangleRenderer>();
 
+	Resources resources;
+	std::shared_ptr<Texture> Tex = resources.load<Texture>("../assets/Whiskers_diffuse.png");
+
+
 	core->run();
 
 	return 0;

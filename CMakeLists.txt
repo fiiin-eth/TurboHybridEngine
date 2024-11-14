@@ -30,6 +30,9 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/Transform.h src/TurboHybridEngine/Transform.cpp
  src/TurboHybridEngine/Window.h src/TurboHybridEngine/Window.cpp
  src/TurboHybridEngine/TriangleRenderer.h src/TurboHybridEngine/TriangleRenderer.cpp
+ src/TurboHybridEngine/Resource.h src/TurboHybridEngine/Resource.cpp
+ src/TurboHybridEngine/Texture.h
+ src/TurboHybridEngine/Resources.h
 )
 
 target_link_libraries(TurboHybridEngine rend)

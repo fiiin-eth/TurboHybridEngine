@@ -1,20 +1,13 @@
 #include "TriangleRenderer.h"
 #include "Window.h"
-#include "../rend/Model.h"
-#include "../rend/Texture.h"
-#include "../rend/Mesh.h"
-#include "../rend/ShaderProgram.h" 
+#include "rend/Rend.h"
 #include <glm/glm.hpp>
 #include <glm/ext.hpp>
 
 
 namespace TurboHybridEngine {
 
-	TriangleRenderer::TriangleRenderer()
-		: m_model("../assets/curuthers.obj")
-		, m_texture("../assets/Whiskers_diffuse.png") {
-
-	}
+	//TriangleRenderer::TriangleRenderer() {}
 
 	void TriangleRenderer::on_render() {
 		glEnable(GL_DEPTH_TEST);
@@ -45,5 +38,7 @@ namespace TurboHybridEngine {
 		glDisable(GL_CULL_FACE);
 		glDisable(GL_DEPTH_TEST);
 	}
+
+
 
 }
