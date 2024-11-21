@@ -13,6 +13,7 @@ namespace TurboHybridEngine {
 
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
 		rtn->m_window = std::make_shared<Window>();
+		rtn->m_resources = std::make_shared<Resources>();
 		rtn->m_self = rtn;
 
 
@@ -77,5 +78,9 @@ namespace TurboHybridEngine {
 
 	std::shared_ptr<Window> Core::window() const {
 		return m_window;
+	}
+
+	std::shared_ptr<Resources> Core::GetResources() {
+		return m_resources;
 	}
 }

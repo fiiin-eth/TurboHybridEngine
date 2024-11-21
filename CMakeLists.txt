@@ -33,6 +33,7 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/Resource.h src/TurboHybridEngine/Resource.cpp
  src/TurboHybridEngine/Texture.h
  src/TurboHybridEngine/Resources.h
+ src/TurboHybridEngine/Model.h 
 )
 
 target_link_libraries(TurboHybridEngine rend)

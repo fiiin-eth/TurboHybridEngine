@@ -1,6 +1,7 @@
 #include "Texture.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
+#include <iostream>
 
 #include <exception>
 namespace Render {
@@ -15,6 +16,8 @@ namespace Render {
 
 		if (!data)
 		{
+			std::cout << "Failed to load image: " << _path << std::endl;
+
 			throw std::exception();
 		}
 

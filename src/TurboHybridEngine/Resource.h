@@ -1,3 +1,6 @@
+#ifndef RESOURCE_H
+#define RESOURCE_H
+
 #include <iostream>
 
 namespace TurboHybridEngine {
@@ -16,8 +19,6 @@ namespace TurboHybridEngine {
 
 		void load();
 	};
-
-
-
-
 }
+
+#endif

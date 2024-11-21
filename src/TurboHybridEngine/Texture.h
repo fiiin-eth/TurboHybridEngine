@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Resource.h"
 #include "rend/Rend.h"
 #include <memory>

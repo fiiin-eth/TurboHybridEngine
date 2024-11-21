@@ -15,5 +15,6 @@ namespace TurboHybridEngine {
 #include "Texture.h"
 #include "Resource.h"
 #include "Resources.h"
+#include "Model.h"
 
 #endif

@@ -7,7 +7,17 @@
 
 namespace TurboHybridEngine {
 
-	//TriangleRenderer::TriangleRenderer() {}
+	TriangleRenderer::TriangleRenderer(){
+
+	}
+
+	void TriangleRenderer::setTexturePath(std::shared_ptr<Render::Texture> _tex) {
+		m_texture = _tex;
+	}
+
+	void TriangleRenderer::setModelPath(std::shared_ptr<Render::Model> _model) {
+		m_model = _model;
+	}
 
 	void TriangleRenderer::on_render() {
 		glEnable(GL_DEPTH_TEST);
@@ -33,12 +43,10 @@ namespace TurboHybridEngine {
 		m_shader.setMat4("u_Model", catModel);
 		m_shader.setMat4("u_View", View);
 		m_shader.setMat4("u_Projection", projection);
-		m_shader.draw(m_model, m_texture);
+		m_shader.draw(*m_model, *m_texture);
 
 		glDisable(GL_CULL_FACE);
 		glDisable(GL_DEPTH_TEST);
 	}
-
-
 
 }
