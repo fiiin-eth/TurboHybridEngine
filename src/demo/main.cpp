@@ -1,8 +1,13 @@
 #include <TurboHybridEngine/TurboHybridEngine.h>
+#include <memory>
 
 using namespace TurboHybridEngine;
 
 struct Player : Component {
+
+	Player() : m_dummy(0) {
+		printf("Player created\n");
+	}
 
 	void on_initialize() {
 		printf("initialized\n");
@@ -27,7 +32,7 @@ int main() {
 
 	//entity->add_component<TriangleRenderer>();
 
-	std::shared_ptr<Entity> entity = core->add_entity();
+	//std::shared_ptr<Entity> entity = core->add_entity();
 
 	//Resources resources;
 	//std::shared_ptr<Texture> Tex = resources.load<Texture>("../assets/Whiskers_diffuse.png");

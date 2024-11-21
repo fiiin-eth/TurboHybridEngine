@@ -1,3 +1,6 @@
+#ifndef RESOURCES_H
+#define RESOURCES_H
+
 #include <iostream>
 #include <vector>
 #include "Resource.h"
@@ -5,7 +8,7 @@
 namespace TurboHybridEngine {
 
 
-	struct Resource;
+	//struct Resource;
 	struct Resources {
 
 		template <typename T>
@@ -31,3 +34,5 @@ namespace TurboHybridEngine {
 	};
 
 }
+
+#endif
