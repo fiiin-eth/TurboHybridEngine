@@ -3,12 +3,12 @@
 
 #include <iostream>
 #include <vector>
-#include "Resource.h"
+#include <memory>
 
 namespace TurboHybridEngine {
 
 
-	//struct Resource;
+	struct Resource;
 	struct Resources {
 
 		template <typename T>
@@ -21,8 +21,8 @@ namespace TurboHybridEngine {
 				}
 			}
 			std::shared_ptr<T> rtn = std::make_shared<T>();
-			rtn->m_path = _path;
-			rtn->load();
+			rtn->setPath(_path);
+			rtn->onLoad();
 			m_resources.push_back(rtn);
 
 			return rtn;

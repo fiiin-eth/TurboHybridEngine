@@ -9,11 +9,12 @@ namespace TurboHybridEngine {
 	struct Resource {
 
 		std::string getPath() const;
+		void setPath(const std::string& _path) { m_path = _path; }
 		
+		virtual void onLoad() = 0;
+
 	private:
 		friend struct TurboHybridEngine::Resources;
-
-		virtual void onLoad() = 0;
 
 		std::string m_path;
 
