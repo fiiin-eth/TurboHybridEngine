@@ -2,6 +2,7 @@
 #include "Entity.h"
 #include "Transform.h"
 #include "Window.h"
+#include "Resources.h"
 #include <SDL2/SDL.h>
 #include <GL/glew.h>
 #include <iostream>

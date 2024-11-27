@@ -19,6 +19,7 @@ namespace TurboHybridEngine {
 		m_model = _model;
 	}
 
+
 	void TriangleRenderer::on_render() {
 		glEnable(GL_DEPTH_TEST);
 		glEnable(GL_CULL_FACE);

@@ -2,6 +2,7 @@
 #define TRIANGLE_RENDERER_H
 
 #include "Component.h"
+#include "Transform.h"
 #include <rend/Rend.h>
 
 

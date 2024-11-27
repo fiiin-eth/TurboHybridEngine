@@ -30,21 +30,21 @@ int main() {
 
 	std::shared_ptr<Player> p = entity->add_component<Player>();
 
-	//entity->add_component<TriangleRenderer>();
-
-	//std::shared_ptr<Entity> entity = core->add_entity();
-
-	//Resources resources;
-	//std::shared_ptr<Texture> Tex = resources.load<Texture>("../assets/Whiskers_diffuse.png");
-	//std::shared_ptr<Model> Mod = resources.load<Model>("../assets/Whiskers.obj");
+	std::shared_ptr<Resources> resources = core->GetResources();
 
 	std::shared_ptr<TriangleRenderer> r = entity->add_component<TriangleRenderer>();
-
-	std::shared_ptr<Resources> resources = core->GetResources();
 	std::shared_ptr<Texture> Tex = resources->load<Texture>("../assets/Whiskers_diffuse.png");
 	std::shared_ptr<Model> Mod = resources->load<Model>("../assets/curuthers.obj");
 	r->setTexturePath(Tex->GetTexture());
 	r->setModelPath(Mod->GetModel());
+
+
+	std::shared_ptr<TriangleRenderer> r2 = entity->add_component<TriangleRenderer>();
+	std::shared_ptr<Texture> Tex2 = resources->load<Texture>("../assets/F1Tex.png");
+	std::shared_ptr<Model> Mod2 = resources->load<Model>("../assets/F1Car.obj");
+	r2->setTexturePath(Tex2->GetTexture());
+	r2->setModelPath(Mod2->GetModel());
+
 
 	core->run();
 
