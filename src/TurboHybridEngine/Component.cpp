@@ -14,4 +14,8 @@ namespace TurboHybridEngine {
 		on_render();
 	}
 
+	std::shared_ptr<Entity> Component::get_entity() {
+		return m_entity.lock();
+	}
+
 }
