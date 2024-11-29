@@ -37,16 +37,18 @@ int main() {
 	std::shared_ptr<Model> Mod = resources->load<Model>("../assets/curuthers.obj");
 	r->setTexturePath(Tex->GetTexture());
 	r->setModelPath(Mod->GetModel());
+	entity->get_component<Transform>()->setPosition(glm::vec3(-2.0f, 0.0f, -10.0f));
 
 
-	std::shared_ptr<Entity> entity2 = core->add_entity();
-	std::shared_ptr<TriangleRenderer> r2 = entity2->add_component<TriangleRenderer>();
-	std::shared_ptr<Texture> Tex2 = resources->load<Texture>("../assets/F1Tex.png");
-	std::shared_ptr<Model> Mod2 = resources->load<Model>("../assets/F1Car.obj");
-	r2->setTexturePath(Tex2->GetTexture());
-	r2->setModelPath(Mod2->GetModel());
-	entity2->get_component<Transform>()->setScale(glm::vec3(0.01f, 0.01f, 0.01f));
-
+	//std::shared_ptr<Entity> entity2 = core->add_entity();
+	//std::shared_ptr<TriangleRenderer> r2 = entity2->add_component<TriangleRenderer>();
+	//std::shared_ptr<Texture> Tex2 = resources->load<Texture>("../assets/F1Tex.png");
+	//std::shared_ptr<Model> Mod2 = resources->load<Model>("../assets/F1Car.obj");
+	//r2->setTexturePath(Tex2->GetTexture());
+	//r2->setModelPath(Mod2->GetModel());
+	//entity2->get_component<Transform>()->setScale(glm::vec3(0.01f, 0.01f, 0.01f));
+	//entity2->get_component<Transform>()->setPosition(glm::vec3(2.0f, -3.0f, -10.0f));
+	//entity2->get_component<Transform>()->setRotation(glm::vec3(0.0f, 70.0f, 0.0f));
 
 
 	core->run();
