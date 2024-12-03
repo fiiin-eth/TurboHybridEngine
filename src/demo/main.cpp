@@ -33,10 +33,8 @@ int main() {
 	std::shared_ptr<Resources> resources = core->GetResources();
 
 	std::shared_ptr<TriangleRenderer> r = entity->add_component<TriangleRenderer>();
-	std::shared_ptr<Texture> Tex = resources->load<Texture>("../assets/Whiskers_diffuse.png");
-	std::shared_ptr<Model> Mod = resources->load<Model>("../assets/curuthers.obj");
-	r->setTexturePath(Tex->GetTexture());
-	r->setModelPath(Mod->GetModel());
+	r->setTexturePath(resources->load<Texture>("../assets/Whiskers_diffuse.png"));
+	r->setModelPath(resources->load<Model>("../assets/curuthers.obj"));
 	entity->get_component<Transform>()->setPosition(glm::vec3(-2.0f, 0.0f, -10.0f));
 
 

@@ -2,7 +2,8 @@
 #include "Window.h"
 #include "Entity.h"
 #include "Transform.h"
-
+#include "Texture.h"
+#include "Model.h"
 #include "Core.h"
 #include "rend/Rend.h"
 #include <glm/glm.hpp>
@@ -15,11 +16,11 @@ namespace TurboHybridEngine {
 
 	}
 
-	void TriangleRenderer::setTexturePath(std::shared_ptr<Render::Texture> _tex) {
+	void TriangleRenderer::setTexturePath(std::shared_ptr<Texture> _tex) {
 		m_texture = _tex;
 	}
 
-	void TriangleRenderer::setModelPath(std::shared_ptr<Render::Model> _model) {
+	void TriangleRenderer::setModelPath(std::shared_ptr<Model> _model) {
 		m_model = _model;
 	}
 
@@ -57,7 +58,7 @@ namespace TurboHybridEngine {
 		m_shader.setMat4("u_Model", transform->GetModel());
 		m_shader.setMat4("u_View", View);
 		m_shader.setMat4("u_Projection", projection);
-		m_shader.draw(*m_model, *m_texture);
+		m_shader.draw(m_model->m_model.get(), m_texture->m_texture.get());
 
 		glDisable(GL_CULL_FACE);
 		glDisable(GL_DEPTH_TEST);

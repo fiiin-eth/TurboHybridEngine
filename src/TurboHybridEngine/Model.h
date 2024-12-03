@@ -8,21 +8,13 @@ namespace TurboHybridEngine {
 
 	struct Model : Resource {
 
-		void onLoad();
-		std::shared_ptr<Render::Model> GetModel();
+		void onLoad(){ m_model = std::make_shared<Render::Model>(getPath()); }
+		std::shared_ptr<Render::Model> GetModel() { return m_model; }
 
 	private:
+		friend struct TriangleRenderer;
 		std::shared_ptr<Render::Model> m_model;
 
 	};
-
-	void Model::onLoad() {
-		m_model = std::make_shared<Render::Model>(getPath());
-
-	}
-
-	std::shared_ptr<Render::Model> Model::GetModel() {
-		return m_model;
-	}
 
 }

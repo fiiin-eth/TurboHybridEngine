@@ -8,22 +8,23 @@
 
 namespace TurboHybridEngine {
 
+	struct Model;
+	struct Texture;
 
 	struct TriangleRenderer : Component {
 	public:
 		TriangleRenderer();
 		void on_render();
 
-		void setTexturePath(std::shared_ptr<Render::Texture> _tex);
-		void setModelPath(std::shared_ptr<Render::Model> _model);
+		void setTexturePath(std::shared_ptr<Texture> _tex);
+		void setModelPath(std::shared_ptr<Model> _model);
 
 	private:
 
-		std::shared_ptr<Render::Texture> m_texture;
-		std::shared_ptr<Render::Model> m_model;
+		std::shared_ptr<Texture> m_texture;
+		std::shared_ptr<Model> m_model;
 
 		//Render::Model m_model;
-		Render::Mesh m_mesh;
 		//Render::Texture m_texture;
 		Render::Shader m_shader;
 		//Render::Face m_face;

@@ -132,5 +132,14 @@ namespace Render {
 		glDrawArrays(GL_TRIANGLES, 0, _model.vertex_count());
 		glUseProgram(0);
 	}
-
+	void Shader::draw(Model* _model, Texture* _tex)
+	{
+		glUseProgram(programId);
+		glBindVertexArray(_model->vao_id());
+		glBindTexture(GL_TEXTURE_2D, _tex->getid());
+		glDrawArrays(GL_TRIANGLES, 0, _model->vertex_count());
+		glBindVertexArray(0);
+		glBindTexture(GL_TEXTURE_2D, 0);
+		glUseProgram(0);
+	}
 }
