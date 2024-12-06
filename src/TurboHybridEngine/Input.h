@@ -1,10 +1,11 @@
 #pragma once
 
-#include "Keyboard.h"
-
 #include <memory>
 
 namespace TurboHybridEngine {
+
+	class Keyboard;
+	struct Core;
 
 	class Input {
 
@@ -14,9 +15,10 @@ namespace TurboHybridEngine {
 
 		bool Update();
 
-		std::shared_ptr<Keyboard> GetKeyboard() { return m_keyboard; }
+		std::shared_ptr<Keyboard> GetKeyboard() const;
 
 	private:
+		friend struct Core;
 		std::shared_ptr<Keyboard> m_keyboard;
 
 	};

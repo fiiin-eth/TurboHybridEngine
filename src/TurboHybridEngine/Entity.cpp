@@ -14,4 +14,9 @@ namespace TurboHybridEngine {
 			m_components.at(ci)->render();
 		}
 	}
+
+	std::shared_ptr<Core> Entity::get_core() const {
+		return m_core.lock();
+
+	}
 }

@@ -16,6 +16,7 @@ namespace TurboHybridEngine {
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
 		rtn->m_window = std::make_shared<Window>();
 		rtn->m_resources = std::make_shared<Resources>();
+		rtn->m_input = std::make_shared<Input>();
 		rtn->m_self = rtn;
 
 		return rtn;
@@ -47,23 +48,14 @@ namespace TurboHybridEngine {
 
 		while (running)
 		{
-			SDL_Event event = { 0 };
 
-			while (SDL_PollEvent(&event)) {
-
-				if (event.type == SDL_QUIT) {
-
-					running = false;
-				}
-				else if (event.type == SDL_KEYDOWN){
-
-				}
-			}
 
 
 			for (size_t ei = 0; ei < m_entities.size(); ++ei) {
 				m_entities.at(ei)->tick();
 			}
+
+			m_input->Update();
 
 			//SDL_GL_ClearWindow(m_window->m_raw);
 			glClearColor(1, 1, 1, 1);
@@ -83,5 +75,9 @@ namespace TurboHybridEngine {
 
 	std::shared_ptr<Resources> Core::GetResources() {
 		return m_resources;
+	}
+
+	std::shared_ptr<Input> Core::get_input() {
+		return m_input;
 	}
 }

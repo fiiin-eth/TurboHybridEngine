@@ -1,3 +1,5 @@
+#pragma once
+#include "Keyboard.h"
 #include "Input.h"
 
 namespace TurboHybridEngine {
@@ -17,7 +19,6 @@ namespace TurboHybridEngine {
 				return false;
 			}
 
-
 			else if (event.type == SDL_KEYDOWN) {
 			
 				m_keyboard->keys.push_back(event.key.keysym.sym);
@@ -34,6 +35,10 @@ namespace TurboHybridEngine {
 
 
 		return true;
+	}
+
+	std::shared_ptr<Keyboard> Input::GetKeyboard() const {
+		return m_keyboard;
 	}
 
 }

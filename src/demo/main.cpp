@@ -16,7 +16,11 @@ private:
 	int m_dummy;
 
 	void on_tick() {
-		printf("tick\n");
+		//printf("tick\n");
+		if (get_keyboard()->IsKeyDown(119)) {
+			printf("hello\n");
+			
+		}
 	}
 
 

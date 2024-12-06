@@ -35,7 +35,7 @@ namespace TurboHybridEngine {
 
 			return nullptr;
 		}
-
+		std::shared_ptr<Core> get_core() const;
 		//~Entity();
 	private:
 		friend struct TurboHybridEngine::Core;
@@ -44,6 +44,7 @@ namespace TurboHybridEngine {
 		std::weak_ptr<Entity> m_self;
 
 		std::vector<std::shared_ptr<Component> > m_components;
+
 
 		void tick();
 		void render();

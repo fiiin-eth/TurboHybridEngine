@@ -6,6 +6,8 @@
 
 namespace TurboHybridEngine {
 
+	class Input;
+
 	class Keyboard {
 
 	public:

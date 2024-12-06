@@ -16,5 +16,7 @@ namespace TurboHybridEngine {
 #include "Resource.h"
 #include "Resources.h"
 #include "Model.h"
+#include "Input.h"
+#include "Keyboard.h"
 
 #endif
