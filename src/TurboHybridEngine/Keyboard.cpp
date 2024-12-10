@@ -20,7 +20,6 @@ namespace TurboHybridEngine {
 	}
 
 	bool Keyboard::IsKeyDown(int _key) {
-		printf("keysDown size: %d\n", keysDown.size());
 		for (int i = 0; i < keysDown.size(); ++i) {
 			if (keysDown[i] == _key) {
 				return true;

@@ -33,12 +33,15 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/Resource.h src/TurboHybridEngine/Resource.cpp
  src/TurboHybridEngine/Input.h src/TurboHybridEngine/Input.cpp
  src/TurboHybridEngine/Keyboard.h src/TurboHybridEngine/Keyboard.cpp
+ src/TurboHybridEngine/Audio.h src/TurboHybridEngine/Audio.cpp
+ src/TurboHybridEngine/AudioSource.h src/TurboHybridEngine/AudioSource.cpp
+ src/TurboHybridEngine/Sound.h src/TurboHybridEngine/Sound.cpp
  src/TurboHybridEngine/Texture.h
  src/TurboHybridEngine/Resources.h
  src/TurboHybridEngine/Model.h 
 )
 
-target_link_libraries(TurboHybridEngine rend)
+target_link_libraries(TurboHybridEngine rend openal32)
 
 add_executable(demo
   src/demo/main.cpp
