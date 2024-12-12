@@ -38,7 +38,7 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/Sound.h src/TurboHybridEngine/Sound.cpp
  src/TurboHybridEngine/Texture.h
  src/TurboHybridEngine/Resources.h
- src/TurboHybridEngine/Model.h 
+ src/TurboHybridEngine/Model.h
 )
 
 target_link_libraries(TurboHybridEngine rend openal32)

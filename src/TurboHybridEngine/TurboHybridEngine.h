@@ -18,5 +18,6 @@ namespace TurboHybridEngine {
 #include "Model.h"
 #include "Input.h"
 #include "Keyboard.h"
+#include "AudioSource.h"
 
 #endif

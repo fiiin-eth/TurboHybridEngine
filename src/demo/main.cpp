@@ -43,6 +43,10 @@ int main() {
 
 	std::shared_ptr<Resources> resources = core->GetResources();
 
+	std::shared_ptr<AudioSource> audio = entity->add_component<AudioSource>();
+
+	audio->SetSound(core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg"));
+
 	std::shared_ptr<TriangleRenderer> r = entity->add_component<TriangleRenderer>();
 	r->setTexturePath(resources->load<Texture>("../assets/Whiskers_diffuse.png"));
 	r->setModelPath(resources->load<Model>("../assets/curuthers.obj"));

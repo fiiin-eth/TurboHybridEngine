@@ -2,6 +2,7 @@
 #include "Core.h"
 #include "Input.h"
 #include "Entity.h"
+#include "Transform.h"
 
 namespace TurboHybridEngine {
 
@@ -24,6 +25,16 @@ namespace TurboHybridEngine {
 	std::shared_ptr<Keyboard> Component::get_keyboard() {
 		return get_entity()->get_core()->get_input()->GetKeyboard();
 
+	}
+
+	std::shared_ptr<Transform> Component::get_transform() {
+
+		return get_entity()->add_component<Transform>();
+	}
+
+	glm::vec3 Component::get_position() {
+
+		return get_transform()->get_position();
 	}
 
 }
