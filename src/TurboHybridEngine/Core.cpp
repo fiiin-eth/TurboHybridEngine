@@ -4,7 +4,7 @@
 #include "Window.h"
 #include "Resources.h"
 #include "Input.h"
-#include "stb_vorbis.c"
+#include "Audio.h"
 #include <SDL2/SDL.h>
 #include <GL/glew.h>
 #include <AL/al.h>
@@ -20,6 +20,7 @@ namespace TurboHybridEngine {
 		rtn->m_window = std::make_shared<Window>();
 		rtn->m_resources = std::make_shared<Resources>();
 		rtn->m_input = std::make_shared<Input>();
+		rtn->m_audio = std::make_shared<Audio>();
 		rtn->m_self = rtn;
 
 		return rtn;

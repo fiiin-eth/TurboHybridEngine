@@ -27,6 +27,7 @@ private:
 		}
 		if (get_keyboard()->IsKeyDown(SDLK_d)) {
 			get_entity()->get_component<Transform>()->setPosition(get_entity()->get_component<Transform>()->getPosition() + glm::vec3(0.1f, 0.0f, 0.0f));
+			get_entity()->get_component<AudioSource>()->Play();
 		}
 	}
 
@@ -45,7 +46,18 @@ int main() {
 
 	std::shared_ptr<AudioSource> audio = entity->add_component<AudioSource>();
 
-	audio->SetSound(core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg"));
+	//audio->SetSound(core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg"));
+	std::shared_ptr<Sound> sound = core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg");
+	audio->SetSound(sound);
+
+	if (sound) {
+		printf("Audio path assigned correctly\n");
+	}
+	else {
+		printf("Failed to assign audio path\n");
+	}
+
+
 
 	std::shared_ptr<TriangleRenderer> r = entity->add_component<TriangleRenderer>();
 	r->setTexturePath(resources->load<Texture>("../assets/Whiskers_diffuse.png"));

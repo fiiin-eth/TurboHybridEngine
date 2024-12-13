@@ -8,7 +8,7 @@
 #include <string>
 
 #include "Resource.h"
-#include "stb_vorbis.c"
+
 
 namespace TurboHybridEngine {
 
@@ -17,10 +17,10 @@ namespace TurboHybridEngine {
 	struct Sound : public Resource {
 	public:
 
-		void OnLoad();
+		void onLoad();
 	private:
 
-		friend class AudioSource;
+		friend struct AudioSource;
 
 		ALuint m_bufferId = 0;
 		ALenum m_format = 0;

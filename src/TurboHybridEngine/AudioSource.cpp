@@ -27,11 +27,18 @@ namespace TurboHybridEngine {
 	}
 
 	void AudioSource::Play() {
-		alSourcePlay(m_sourceId);
+		if(m_sound) {	
+			alSourcePlay(m_sourceId);
+			printf("audio path");
+			printf(m_sound->getPath().c_str());
+		}
+		else {
+			printf("Failed to play audio\n");
+		}
 	}
 
 	AudioSource::~AudioSource() {
-
+		alDeleteSources(1, &m_sourceId);
 	}
 
 }

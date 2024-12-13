@@ -1,8 +1,8 @@
 #include "Sound.h"
-
+#include "stb_vorbis.c"
 namespace TurboHybridEngine {
 
-	void Sound::OnLoad() {
+	void Sound::onLoad() {
 
 		std::vector<unsigned char> data;
 
@@ -37,6 +37,11 @@ namespace TurboHybridEngine {
 
 		// Clean up the read data
 		free(output);
+
+		alGenBuffers(1, &m_bufferId);
+
+		alBufferData(m_bufferId, m_format, &data.at(0),
+			static_cast<ALsizei>(data.size()), m_frequency);
 	}
 
 }

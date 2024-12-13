@@ -7,6 +7,7 @@ namespace TurboHybridEngine {
 	struct Window;
 	struct Resources;
 	class Input;
+	struct Audio;
 
 	struct Core {
 		static std::shared_ptr<Core> initialize();
@@ -21,6 +22,7 @@ namespace TurboHybridEngine {
 		std::shared_ptr<Window> m_window;
 		std::shared_ptr<Resources> m_resources;
 		std::shared_ptr<Input> m_input;
+		std::shared_ptr<Audio> m_audio;
 		std::vector<std::shared_ptr<Entity> > m_entities;
 		std::weak_ptr<Core> m_self;
 
