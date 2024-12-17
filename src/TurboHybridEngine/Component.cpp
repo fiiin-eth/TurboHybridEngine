@@ -27,6 +27,10 @@ namespace TurboHybridEngine {
 
 	}
 
+	std::shared_ptr<Mouse> Component::get_mouse() {
+		return get_entity()->get_core()->get_input()->GetMouse();
+	}
+
 	std::shared_ptr<Transform> Component::get_transform() {
 
 		return get_entity()->add_component<Transform>();

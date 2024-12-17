@@ -27,6 +27,11 @@ private:
 		}
 		if (get_keyboard()->IsKeyDown(SDLK_d)) {
 			get_entity()->get_component<Transform>()->setPosition(get_entity()->get_component<Transform>()->getPosition() + glm::vec3(0.1f, 0.0f, 0.0f));
+		}
+		if (get_mouse()->IsMouseDown(SDL_BUTTON_LEFT)) {
+			get_entity()->get_component<AudioSource>()->Play();
+		}
+		if (get_mouse()->IsMouseDown(SDL_BUTTON_RIGHT)) {
 			get_entity()->get_component<AudioSource>()->Play();
 		}
 	}

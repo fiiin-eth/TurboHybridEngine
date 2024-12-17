@@ -30,7 +30,6 @@ namespace TurboHybridEngine {
 					keys.erase(keys.begin() + i);
 					break;
 				}
-
 			}
 		}
 
