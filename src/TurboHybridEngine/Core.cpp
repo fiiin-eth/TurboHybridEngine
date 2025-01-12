@@ -44,8 +44,6 @@ namespace TurboHybridEngine {
 
 	}
 
-
-
 	void Core::run() {
 
 		bool running = true;

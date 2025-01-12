@@ -20,5 +20,7 @@ namespace TurboHybridEngine {
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "AudioSource.h"
+#include "BoxCollider.h"
+#include "RigidBody.h"
 
 #endif

@@ -33,12 +33,12 @@ namespace TurboHybridEngine {
 
 	std::shared_ptr<Transform> Component::get_transform() {
 
-		return get_entity()->add_component<Transform>();
+		return get_entity()->get_component<Transform>();
 	}
 
 	glm::vec3 Component::get_position() {
 
-		return get_transform()->get_position();
+		return get_transform()->getPosition();
 	}
 
 }

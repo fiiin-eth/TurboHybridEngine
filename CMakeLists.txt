@@ -37,6 +37,8 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/AudioSource.h src/TurboHybridEngine/AudioSource.cpp
  src/TurboHybridEngine/Sound.h src/TurboHybridEngine/Sound.cpp
  src/TurboHybridEngine/Mouse.h src/TurboHybridEngine/Mouse.cpp
+ src/TurboHybridEngine/BoxCollider.h src/TurboHybridEngine/BoxCollider.cpp
+ src/TurboHybridEngine/RigidBody.h src/TurboHybridEngine/RigidBody.cpp
  src/TurboHybridEngine/Texture.h
  src/TurboHybridEngine/Resources.h
  src/TurboHybridEngine/Model.h

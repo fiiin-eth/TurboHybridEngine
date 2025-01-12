@@ -22,8 +22,7 @@ namespace TurboHybridEngine {
 		}
 
 		template <typename T>
-		std::shared_ptr<T> get_component()
-		{
+		std::shared_ptr<T> get_component(){
 			for (size_t i = 0; i < m_components.size(); ++i)
 			{
 				std::shared_ptr<T> rtn = std::dynamic_pointer_cast<T>(m_components[i]);
@@ -36,6 +35,7 @@ namespace TurboHybridEngine {
 			return nullptr;
 		}
 		std::shared_ptr<Core> get_core() const;
+
 		//~Entity();
 	private:
 		friend struct TurboHybridEngine::Core;
