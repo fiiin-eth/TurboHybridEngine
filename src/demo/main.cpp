@@ -34,38 +34,26 @@ private:
 		if (get_mouse()->IsMouseDown(SDL_BUTTON_RIGHT)) {
 			get_entity()->get_component<AudioSource>()->Play();
 		}
+
+		std::cout << "Mouse pos: " << get_mouse()->get_xPosition() << "," << get_mouse()->get_yPosition() << std::endl;
 	}
-
-
 };
 
 #undef main
 int main() {
 	std::shared_ptr<Core> core = Core::initialize();
 
-	std::shared_ptr<Entity> entity = core->add_entity();
-
-	std::shared_ptr<Player> p = entity->add_component<Player>();
-
 	std::shared_ptr<Resources> resources = core->GetResources();
 
+
+	// entity 1
+	std::shared_ptr<Entity> entity = core->add_entity();
+	std::shared_ptr<Player> p = entity->add_component<Player>();
+
 	std::shared_ptr<AudioSource> audio = entity->add_component<AudioSource>();
-
-	//audio->SetSound(core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg"));
-	std::shared_ptr<Sound> sound = core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg");
-	audio->SetSound(sound);
-
-	if (sound) {
-		printf("Audio path assigned correctly\n");
-	}
-	else {
-		printf("Failed to assign audio path\n");
-	}
-
-
+	audio->SetSound(core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg"));
 
 	std::shared_ptr<TriangleRenderer> r = entity->add_component<TriangleRenderer>();
-
 	r->setTexturePath(resources->load<Texture>("../assets/Whiskers_diffuse.png"));
 	r->setModelPath(resources->load<Model>("../assets/curuthers.obj"));
 	entity->get_component<Transform>()->setPosition(glm::vec3(-2.0f, 0.0f, -10.0f));
@@ -74,15 +62,7 @@ int main() {
 	entity->add_component<Rigidbody>();
 
 
-
-
-
-
-
-
-
-
-
+	// entity 2
 	std::shared_ptr<Entity> entity2 = core->add_entity();
 	std::shared_ptr<TriangleRenderer> r2 = entity2->add_component<TriangleRenderer>();
 
@@ -92,7 +72,7 @@ int main() {
 	r2->setModelPath(resources->load<Model>("../assets/curuthers.obj"));
 
 	//entity2->get_component<Transform>()->setScale(glm::vec3(0.01f, 0.01f, 0.01f));
-	entity2->get_component<Transform>()->setPosition(glm::vec3(-2.1f, 0.0f, -10.0f));
+	entity2->get_component<Transform>()->setPosition(glm::vec3(2.0f, 0.0f, -10.0f));
 	//entity2->get_component<Transform>()->setRotation(glm::vec3(0.0f, 70.0f, 0.0f));
 
 	std::shared_ptr<BoxCollider> entityCollider2 = entity2->add_component<BoxCollider>();

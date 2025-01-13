@@ -1,5 +1,4 @@
-#ifndef TurboHybridEngine_COMPONENT_H
-#define TurboHybridEngine_COMPONENT_H
+#pragma once
 #include <memory>
 #include <glm/glm.hpp>
 namespace TurboHybridEngine {
@@ -32,5 +31,3 @@ namespace TurboHybridEngine {
 	};
 
 }
-
-#endif

@@ -14,9 +14,6 @@ namespace TurboHybridEngine
 		std::vector<std::shared_ptr<BoxCollider>> boxColliders;
 		get_entity()->get_core()->Find(boxColliders);
 
-		std::cout << "Rigid ontick" << std::endl;
-
-
 		for (auto boxCollider : boxColliders) {
 			if (boxCollider->get_transform() == get_transform()) {
 				continue;

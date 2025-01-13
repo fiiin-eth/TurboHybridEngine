@@ -2,6 +2,7 @@
 #include "Keyboard.h"
 #include "Mouse.h"
 #include "Input.h"
+#include <iostream>
 
 namespace TurboHybridEngine {
 
@@ -20,25 +21,26 @@ namespace TurboHybridEngine {
 			if (event.type == SDL_QUIT) {
 				return false;
 			}
-
 			else if (event.type == SDL_KEYDOWN) {
 			
 				m_keyboard->keys.push_back(event.key.keysym.sym);
 				m_keyboard->keysDown.push_back(event.key.keysym.sym);
 			}
-
 			else if (event.type == SDL_KEYUP) {
 				m_keyboard->KeyReleased(event.key.keysym.sym);
 				m_keyboard->keysUp.push_back(event.key.keysym.sym);
 			}
-
 			else if (event.type == SDL_MOUSEBUTTONDOWN) {
 				m_mouse->mouse.push_back(event.button.button);
 				m_mouse->mouseDown.push_back(event.button.button);
 			}
-			else if (event.type = SDL_MOUSEBUTTONUP) {
+			else if (event.type == SDL_MOUSEBUTTONUP) {
 				m_mouse->MouseReleased(event.button.button);
 				m_mouse->mouseUp.push_back(event.button.button);
+			}
+			else if (event.type == SDL_MOUSEMOTION){
+				m_mouse->m_xPos = event.motion.x;
+				m_mouse->m_yPos = event.motion.y;
 			}
 
 		}

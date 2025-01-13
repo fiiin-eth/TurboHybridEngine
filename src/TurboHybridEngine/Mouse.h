@@ -1,7 +1,7 @@
 #pragma once
 
 #include <SDL2/SDL.h>
-
+#include <glm/glm.hpp>
 #include <vector>
 
 namespace TurboHybridEngine {
@@ -20,6 +20,9 @@ namespace TurboHybridEngine {
 		bool IsMouseDown(int _mouse);
 		bool IsMouseUp(int _mouse);
 
+		int get_xPosition() { return m_xPos; }
+		int get_yPosition() { return m_yPos; }
+
 	private:
 		friend class Input;
 
@@ -32,6 +35,9 @@ namespace TurboHybridEngine {
 				}
 			}
 		}
+
+		int m_xPos = 0;
+		int m_yPos = 0;
 
 		std::vector<int> mouse;
 		std::vector<int> mouseDown;
