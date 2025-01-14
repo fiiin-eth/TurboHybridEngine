@@ -13,6 +13,7 @@ namespace TurboHybridEngine {
 
 	private:
 		friend struct TriangleRenderer;
+		friend struct GUI;
 		std::shared_ptr<Render::Texture> m_texture;
 
 	};

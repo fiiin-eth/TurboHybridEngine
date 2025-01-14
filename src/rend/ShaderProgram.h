@@ -15,7 +15,7 @@ namespace Render {
 	class Shader {
 
 	public:
-		Shader();
+		Shader(bool GUI);
 		~Shader();
 
 		void setMat4(std::string variable, glm::mat4 value);
@@ -24,6 +24,7 @@ namespace Render {
 		void draw(Model& _model, Texture& _tex);
 		void draw(Model& _model, GLuint _texId);
 		void draw(Model* _model, Texture* _tex);
+		void draw(Mesh* _mesh, Texture* _tex);
 
 		GLuint programId;
 		GLint modelLoc;

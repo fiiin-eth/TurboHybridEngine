@@ -22,5 +22,6 @@ namespace TurboHybridEngine {
 #include "AudioSource.h"
 #include "BoxCollider.h"
 #include "RigidBody.h"
+#include "GUI.h"
 
 #endif

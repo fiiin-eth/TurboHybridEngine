@@ -6,13 +6,14 @@
 #include "Model.h"
 #include "Core.h"
 #include "rend/Rend.h"
+#include "rend/ShaderProgram.h"
 #include <glm/glm.hpp>
 #include <glm/ext.hpp>
 
 
 namespace TurboHybridEngine {
 
-	TriangleRenderer::TriangleRenderer(){
+	TriangleRenderer::TriangleRenderer() : m_shader(Render::Shader(false)) {
 
 	}
 

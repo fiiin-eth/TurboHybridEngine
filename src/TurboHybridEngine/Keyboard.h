@@ -28,7 +28,7 @@ namespace TurboHybridEngine {
 			for (int i = 0; i < keys.size(); ++i) {
 				if (keys[i] == _key) {
 					keys.erase(keys.begin() + i);
-					break;
+					--i;
 				}
 			}
 		}

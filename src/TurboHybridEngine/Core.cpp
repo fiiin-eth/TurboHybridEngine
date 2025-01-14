@@ -5,6 +5,7 @@
 #include "Resources.h"
 #include "Input.h"
 #include "Audio.h"
+#include "GUI.h"
 #include <SDL2/SDL.h>
 #include <GL/glew.h>
 #include <AL/al.h>
@@ -21,6 +22,7 @@ namespace TurboHybridEngine {
 		rtn->m_resources = std::make_shared<Resources>();
 		rtn->m_input = std::make_shared<Input>();
 		rtn->m_audio = std::make_shared<Audio>();
+		rtn->m_gui = std::make_shared<GUI>(rtn);
 		rtn->m_self = rtn;
 
 		return rtn;
@@ -63,6 +65,10 @@ namespace TurboHybridEngine {
 				m_entities.at(ei)->render();
 			}
 
+			for (size_t ei = 0; ei < m_entities.size(); ++ei) {
+				m_entities.at(ei)->on_gui();
+			}
+
 			SDL_GL_SwapWindow(m_window->m_raw);
 		}
 	}
@@ -77,5 +83,9 @@ namespace TurboHybridEngine {
 
 	std::shared_ptr<Input> Core::get_input() {
 		return m_input;
+	}
+
+	std::shared_ptr<GUI> Core::gui() {
+		return m_gui;
 	}
 }

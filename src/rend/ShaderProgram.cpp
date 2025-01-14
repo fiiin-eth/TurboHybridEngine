@@ -1,6 +1,6 @@
 #include "ShaderProgram.h"
 namespace Render {
-	Shader::Shader() {
+	Shader::Shader(bool GUI) {
 
 		/*************** Vertex Shader ****************/
 
@@ -138,6 +138,16 @@ namespace Render {
 		glBindVertexArray(_model->vao_id());
 		glBindTexture(GL_TEXTURE_2D, _tex->getid());
 		glDrawArrays(GL_TRIANGLES, 0, _model->vertex_count());
+		glBindVertexArray(0);
+		glBindTexture(GL_TEXTURE_2D, 0);
+		glUseProgram(0);
+	}
+	void Shader::draw(Mesh* _mesh, Texture* _tex)
+	{
+		glUseProgram(programId);
+		glBindVertexArray(_mesh->vao_id());
+		glBindTexture(GL_TEXTURE_2D, _tex->getid());
+		glDrawArrays(GL_TRIANGLES, 0, _mesh->vertex_count());
 		glBindVertexArray(0);
 		glBindTexture(GL_TEXTURE_2D, 0);
 		glUseProgram(0);

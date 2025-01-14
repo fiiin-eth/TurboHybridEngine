@@ -9,6 +9,7 @@ namespace TurboHybridEngine {
 	void Component::on_initialize() {}
 	void Component::on_tick() {}
 	void Component::on_render() {}
+	void Component::on_gui() {}
 
 	void Component::tick() {
 		on_tick();
@@ -16,6 +17,10 @@ namespace TurboHybridEngine {
 
 	void Component::render() {
 		on_render();
+	}
+
+	void Component::gui() {
+		on_gui();
 	}
 
 	std::shared_ptr<Entity> Component::get_entity() {
@@ -39,6 +44,10 @@ namespace TurboHybridEngine {
 	glm::vec3 Component::get_position() {
 
 		return get_transform()->getPosition();
+	}
+
+	std::shared_ptr<GUI> Component::get_gui() {
+		return get_entity()->get_core()->gui();
 	}
 
 }

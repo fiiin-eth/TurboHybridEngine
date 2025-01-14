@@ -8,6 +8,7 @@ namespace TurboHybridEngine {
 	struct Resources;
 	class Input;
 	struct Audio;
+	struct GUI;
 
 	struct Core {
 		static std::shared_ptr<Core> initialize();
@@ -17,6 +18,7 @@ namespace TurboHybridEngine {
 		std::shared_ptr<Window> window() const;
 		std::shared_ptr<Resources> GetResources();
 		std::shared_ptr<Input> get_input();
+		std::shared_ptr<GUI> gui();
 
 		template <typename T>
 		void Find(std::vector<std::shared_ptr<T> >& _out){
@@ -42,6 +44,7 @@ namespace TurboHybridEngine {
 		std::shared_ptr<Audio> m_audio;
 		std::vector<std::shared_ptr<Entity> > m_entities;
 		std::weak_ptr<Core> m_self;
+		std::shared_ptr<GUI> m_gui;
 
 	};
 

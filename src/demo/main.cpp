@@ -16,28 +16,41 @@ private:
 	int m_dummy;
 
 	void on_tick() {
-		if (get_keyboard()->IsKeyDown(SDLK_w)) {
+		if (get_keyboard()->IsKey(SDLK_w)) {
 			get_entity()->get_component<Transform>()->setPosition(get_position() + glm::vec3(0.0f, 0.0f, 0.1f));
 		}
-		if (get_keyboard()->IsKeyDown(SDLK_s)) {
+		if (get_keyboard()->IsKey(SDLK_s)) {
 			get_entity()->get_component<Transform>()->setPosition(get_position() + glm::vec3(0.0f, 0.0f, -0.1f));
 		}
-		if (get_keyboard()->IsKeyDown(SDLK_a)) {
+		if (get_keyboard()->IsKey(SDLK_a)) {
 			get_entity()->get_component<Transform>()->setPosition(get_position() + glm::vec3(-0.1f, 0.0f, 0.0f));
 		}
-		if (get_keyboard()->IsKeyDown(SDLK_d)) {
+		if (get_keyboard()->IsKey(SDLK_d)) {
 			get_entity()->get_component<Transform>()->setPosition(get_position() + glm::vec3(0.1f, 0.0f, 0.0f));
 		}
 		if (get_mouse()->IsMouseDown(SDL_BUTTON_LEFT)) {
-			get_entity()->get_component<AudioSource>()->Play();
+			//get_entity()->get_component<AudioSource>()->Play();
 		}
 		if (get_mouse()->IsMouseDown(SDL_BUTTON_RIGHT)) {
 			get_entity()->get_component<AudioSource>()->Play();
 		}
 
-		std::cout << "Mouse pos: " << get_mouse()->get_xPosition() << "," << get_mouse()->get_yPosition() << std::endl;
+		//std::cout << "Mouse pos: " << get_mouse()->get_xPosition() << "," << get_mouse()->get_yPosition() << std::endl;
+	}
+
+	void on_gui() {
+
+		int buttonDo = get_gui()->Button(glm::vec2(100, 100), glm::vec2(100, 100), get_entity()->get_core()->GetResources()->load<Texture>("../assets/Whiskers_diffuse.png"));
+		if (buttonDo == 1) {
+			std::cout << "Button pressed" << std::endl;
+		}
+		else if (buttonDo == 2) {
+			std::cout << "Button not pressed" << std::endl;
+		}
 	}
 };
+
+
 
 #undef main
 int main() {

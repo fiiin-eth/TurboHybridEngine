@@ -48,6 +48,7 @@ namespace TurboHybridEngine {
 
 		void tick();
 		void render();
+		void on_gui();
 	};
 
 }
