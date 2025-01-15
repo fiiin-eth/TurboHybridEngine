@@ -8,11 +8,11 @@ namespace TurboHybridEngine {
 
 	struct Texture : Resource {
 
-		void onLoad() { m_texture = std::make_shared<Render::Texture>(getPath()); }
+		void on_load() { m_texture = std::make_shared<Render::Texture>(get_path()); }
 		std::shared_ptr<Render::Texture> GetTexture() { return m_texture; }
 
 	private:
-		friend struct TriangleRenderer;
+		friend struct ModelRenderer;
 		friend struct GUI;
 		std::shared_ptr<Render::Texture> m_texture;
 

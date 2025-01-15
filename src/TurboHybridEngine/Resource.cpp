@@ -2,13 +2,13 @@
 
 namespace TurboHybridEngine {
 
-	std::string Resource::getPath() const
+	std::string Resource::get_path() const
 	{
 		return m_path;
 	}
 
 	void Resource::load() {
-		onLoad();
+		on_load();
 	}
 
 }

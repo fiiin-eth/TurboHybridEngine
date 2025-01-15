@@ -17,8 +17,7 @@ namespace TurboHybridEngine {
 		~GUI() {}
 
 		int Button(glm::vec2 _position, glm::vec2 _size, std::shared_ptr<Texture> _texture);
-		//void Image(glm::vec2 _position, glm::vec2 _size, std::shared_ptr<Texture> _texture);
-		void test() {}
+		int Image(glm::vec2 _position, glm::vec2 _size, std::shared_ptr<Texture> _texture);
 
 	private:
 		std::shared_ptr<Render::Shader> m_shader = std::make_shared<Render::Shader>(true);

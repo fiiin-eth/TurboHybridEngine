@@ -1,4 +1,4 @@
-#include "TriangleRenderer.h"
+#include "ModelRenderer.h"
 #include "Window.h"
 #include "Entity.h"
 #include "Transform.h"
@@ -13,20 +13,20 @@
 
 namespace TurboHybridEngine {
 
-	TriangleRenderer::TriangleRenderer() : m_shader(Render::Shader(false)) {
+	ModelRenderer::ModelRenderer() : m_shader(Render::Shader(false)) {
 
 	}
 
-	void TriangleRenderer::setTexturePath(std::shared_ptr<Texture> _tex) {
+	void ModelRenderer::setTexturePath(std::shared_ptr<Texture> _tex) {
 		m_texture = _tex;
 	}
 
-	void TriangleRenderer::setModelPath(std::shared_ptr<Model> _model) {
+	void ModelRenderer::setModelPath(std::shared_ptr<Model> _model) {
 		m_model = _model;
 	}
 
 
-	void TriangleRenderer::on_render() {
+	void ModelRenderer::on_render() {
 		glEnable(GL_DEPTH_TEST);
 		glEnable(GL_CULL_FACE);
 

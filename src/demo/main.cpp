@@ -34,8 +34,6 @@ private:
 		if (get_mouse()->IsMouseDown(SDL_BUTTON_RIGHT)) {
 			get_entity()->get_component<AudioSource>()->Play();
 		}
-
-		//std::cout << "Mouse pos: " << get_mouse()->get_xPosition() << "," << get_mouse()->get_yPosition() << std::endl;
 	}
 
 	void on_gui() {
@@ -47,6 +45,8 @@ private:
 		else if (buttonDo == 2) {
 			std::cout << "Button not pressed" << std::endl;
 		}
+
+		int Image = get_gui()->Image(glm::vec2(100, 100), glm::vec2(100, 100), get_entity()->get_core()->GetResources()->load<Texture>("../assets/Whiskers_diffuse.png"));
 	}
 };
 
@@ -66,7 +66,7 @@ int main() {
 	std::shared_ptr<AudioSource> audio = entity->add_component<AudioSource>();
 	audio->SetSound(core->GetResources()->load<Sound>("../assets/Audio/dixie_horn.ogg"));
 
-	std::shared_ptr<TriangleRenderer> r = entity->add_component<TriangleRenderer>();
+	std::shared_ptr<ModelRenderer> r = entity->add_component<ModelRenderer>();
 	r->setTexturePath(resources->load<Texture>("../assets/Whiskers_diffuse.png"));
 	r->setModelPath(resources->load<Model>("../assets/curuthers.obj"));
 	entity->get_component<Transform>()->setPosition(glm::vec3(-2.0f, 0.0f, -10.0f));
@@ -77,7 +77,7 @@ int main() {
 
 	// entity 2
 	std::shared_ptr<Entity> entity2 = core->add_entity();
-	std::shared_ptr<TriangleRenderer> r2 = entity2->add_component<TriangleRenderer>();
+	std::shared_ptr<ModelRenderer> r2 = entity2->add_component<ModelRenderer>();
 
 	//r2->setTexturePath(resources->load<Texture>("../assets/F1Tex.png"));
 	//r2->setModelPath(resources->load<Model>("../assets/F1Car.obj"));

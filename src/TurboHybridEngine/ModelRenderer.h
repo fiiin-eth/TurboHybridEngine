@@ -1,8 +1,7 @@
-#ifndef TRIANGLE_RENDERER_H
-#define TRIANGLE_RENDERER_H
+#ifndef MODEL_RENDERER_H
+#define MODEL_RENDERER_H
 
 #include "Component.h"
-//#include "Transform.h"
 #include <rend/Rend.h>
 
 
@@ -24,13 +23,7 @@ namespace TurboHybridEngine {
 		std::shared_ptr<Texture> m_texture;
 		std::shared_ptr<Model> m_model;
 
-		//Render::Model m_model;
-		//Render::Texture m_texture;
 		Render::Shader m_shader;
-		//Render::Face m_face;
-
-
-
 	};
 }
 

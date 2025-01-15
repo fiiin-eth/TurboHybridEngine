@@ -17,7 +17,7 @@ namespace TurboHybridEngine {
 	struct Sound : public Resource {
 	public:
 
-		void onLoad();
+		void on_load();
 	private:
 
 		friend struct AudioSource;

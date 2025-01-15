@@ -29,7 +29,7 @@ add_library(TurboHybridEngine
  src/TurboHybridEngine/Component.h src/TurboHybridEngine/Component.cpp
  src/TurboHybridEngine/Transform.h src/TurboHybridEngine/Transform.cpp
  src/TurboHybridEngine/Window.h src/TurboHybridEngine/Window.cpp
- src/TurboHybridEngine/TriangleRenderer.h src/TurboHybridEngine/TriangleRenderer.cpp
+ src/TurboHybridEngine/ModelRenderer.h src/TurboHybridEngine/ModelRenderer.cpp
  src/TurboHybridEngine/Resource.h src/TurboHybridEngine/Resource.cpp
  src/TurboHybridEngine/Input.h src/TurboHybridEngine/Input.cpp
  src/TurboHybridEngine/Keyboard.h src/TurboHybridEngine/Keyboard.cpp

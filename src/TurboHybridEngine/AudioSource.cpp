@@ -30,7 +30,7 @@ namespace TurboHybridEngine {
 		if(m_sound) {	
 			alSourcePlay(m_sourceId);
 			printf("audio path");
-			printf(m_sound->getPath().c_str());
+			printf(m_sound->get_path().c_str());
 		}
 		else {
 			printf("Failed to play audio\n");

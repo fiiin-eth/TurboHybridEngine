@@ -2,7 +2,7 @@
 #include "stb_vorbis.c"
 namespace TurboHybridEngine {
 
-	void Sound::onLoad() {
+	void Sound::on_load() {
 
 		std::vector<unsigned char> data;
 
@@ -10,12 +10,12 @@ namespace TurboHybridEngine {
 		int sampleRate = 0;
 		short* output = NULL;
 
-		size_t samples = stb_vorbis_decode_filename((getPath().c_str()),
+		size_t samples = stb_vorbis_decode_filename((get_path().c_str()),
 			&channels, &sampleRate, &output);
 
 		if (samples == -1)
 		{
-			throw std::runtime_error("Failed to open file '" + getPath() + "' for decoding");
+			throw std::runtime_error("Failed to open file '" + get_path() + "' for decoding");
 		}
 
 		// Record the format required by OpenAL

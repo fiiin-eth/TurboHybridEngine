@@ -68,4 +68,24 @@ namespace TurboHybridEngine {
 
 
 	}
+
+	int GUI::Image(glm::vec2 _position, glm::vec2 _size, std::shared_ptr<Texture> _texture) {
+
+		glm::mat4 model(1.0f);
+		model = glm::translate(model, glm::vec3(_position.x, _position.y, 0));
+		model = glm::scale(model, glm::vec3(_size.x, _size.y, 1.0f));
+		m_shader->setMat4("u_Model", model);
+
+		int width = 800;
+		int height = 600;
+
+		glm::mat4 ui_projection = glm::ortho(0.0f, (float)width, 0.0f, (float)height, 0.0f, 1.0f);
+		m_shader->setMat4("u_Projection", ui_projection);
+
+		m_shader->setMat4("u_View", glm::mat4(1.0f));
+
+		m_shader->draw(m_mesh.get(), _texture->m_texture.get());
+
+		return 0;
+	}
 }
