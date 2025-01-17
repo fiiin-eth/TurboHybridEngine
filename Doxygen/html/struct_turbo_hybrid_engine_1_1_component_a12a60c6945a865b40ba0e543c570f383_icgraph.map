@@ -1,0 +1,19 @@
+<map id="TurboHybridEngine::Component::get_entity" name="TurboHybridEngine::Component::get_entity">
+<area shape="rect" id="Node000001" title="Retrieves the entity to which this component is attached." alt="" coords="444,172,597,215"/>
+<area shape="rect" id="Node000002" href="$struct_turbo_hybrid_engine_1_1_component.html#aeda65aaee7bb77902ce5c9a206fd8a85" title="Retrieves the GUI manager associated with this component." alt="" coords="238,5,378,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,161,450,110,423,85,395,62,374,51,377,46,397,58,427,81,454,107,497,158"/>
+<area shape="rect" id="Node000003" href="$struct_turbo_hybrid_engine_1_1_component.html#ad4df42434e52346578b74dfa377fd199" title="Retrieves the keyboard input manager." alt="" coords="221,72,395,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="468,167,395,129,368,118,370,113,397,124,470,162"/>
+<area shape="rect" id="Node000004" href="$struct_turbo_hybrid_engine_1_1_component.html#ac6588fdc0ade8cdc9d3f4d4e38aa2129" title="Retrieves the mouse input manager." alt="" coords="228,139,388,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="428,182,388,175,389,170,429,176"/>
+<area shape="rect" id="Node000005" href="$struct_turbo_hybrid_engine_1_1_component.html#a62376b757ee227f20ae4185b1b4f39ed" title="Retrieves the transform component of the entity." alt="" coords="220,205,396,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="429,210,397,215,396,210,428,205"/>
+<area shape="rect" id="Node000007" href="$struct_turbo_hybrid_engine_1_1_rigidbody.html#a30ae0e895188f06e945085fc0f008dfc" title="Called every frame to update the component. Override this method for custom update logic." alt="" coords="18,264,159,307"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="477,225,439,246,397,263,335,277,272,285,159,290,159,285,271,280,334,272,395,257,436,241,474,221"/>
+<area shape="rect" id="Node000008" href="$struct_turbo_hybrid_engine_1_1_model_renderer.html#a82f72b053a19d35f51f787d48e46d694" title="Called during the rendering phase. Override this method for custom rendering logic." alt="" coords="221,347,395,389"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="487,228,398,306,342,348,339,344,394,302,483,224"/>
+<area shape="rect" id="Node000006" href="$struct_turbo_hybrid_engine_1_1_component.html#a902d534c80e72a31b2db5231eeaf8924" title="Retrieves the position of the entity." alt="" coords="5,197,172,240"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="204,226,172,224,172,219,205,220"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="212,255,160,269,159,264,211,250"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="342,333,329,328,308,325,288,327,276,332,271,338,272,346,267,347,266,337,272,328,287,322,308,320,331,322,344,329"/>
+</map>

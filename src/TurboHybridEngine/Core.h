@@ -6,13 +6,13 @@ namespace TurboHybridEngine {
 	struct Entity;
 	struct Window;
 	struct Resources;
-	class Input;
+	struct Input;
 	struct Audio;
 	struct GUI;
 
 	/**
-	* @class Core
-	* @brief The main engine class responsible for initializing and running the engine.
+	* @struct Core
+	* @brief The main engine struct responsible for initializing and running the engine.
 	*/
 	struct Core {
 

@@ -1,0 +1,8 @@
+<map id="TurboHybridEngine::Rigidbody::on_tick" name="TurboHybridEngine::Rigidbody::on_tick">
+<area shape="rect" id="Node000001" title="Called every frame to update the component. Override this method for custom update logic." alt="" coords="5,5,146,48"/>
+<area shape="rect" id="Node000002" href="$struct_turbo_hybrid_engine_1_1_component.html#a12a60c6945a865b40ba0e543c570f383" title="Retrieves the entity to which this component is attached." alt="" coords="418,5,571,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,21,194,20,370,20,402,21,402,26,370,25,194,25,146,27"/>
+<area shape="rect" id="Node000003" href="$struct_turbo_hybrid_engine_1_1_component.html#a62376b757ee227f20ae4185b1b4f39ed" title="Retrieves the transform component of the entity." alt="" coords="194,35,370,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,34,179,39,178,44,145,39"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="370,41,402,37,403,42,371,46"/>
+</map>

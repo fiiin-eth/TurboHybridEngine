@@ -6,9 +6,9 @@
 
 namespace TurboHybridEngine {
 
-	class Input;
+	struct Input;
 
-	class Keyboard {
+	struct Keyboard {
 
 	public:
 
@@ -21,7 +21,7 @@ namespace TurboHybridEngine {
 		bool IsKeyUp(int _key);
 
 	private:
-		friend class Input;
+		friend struct Input;
 
 		void KeyReleased(int _key) {
 

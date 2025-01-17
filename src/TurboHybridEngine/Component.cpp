@@ -10,6 +10,7 @@ namespace TurboHybridEngine {
 	void Component::on_tick() {}
 	void Component::on_render() {}
 	void Component::on_gui() {}
+	void Component::on_collision() {}
 
 	void Component::tick() {
 		on_tick();
@@ -21,6 +22,10 @@ namespace TurboHybridEngine {
 
 	void Component::gui() {
 		on_gui();
+	}
+
+	void Component::collision() {
+		on_collision();
 	}
 
 	std::shared_ptr<Entity> Component::get_entity() {

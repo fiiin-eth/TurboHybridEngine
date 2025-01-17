@@ -1,0 +1,175 @@
+commit a52ac76c1501acbfa8b0ef8cdf6ea9c8c0f09458
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:29:01 2025 +0000
+
+    Create Technical report for Game Engine Programming.docx
+
+commit c78cf6d989f6a93723690ca66f81c097f4588b8b
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:17:15 2025 +0000
+
+    Doxygen html
+
+commit 939bee3bb7ff339dea7262aaa009d00067bccb1e
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:14:03 2025 +0000
+
+    Doxygen comments
+    
+    + naming convention changes
+
+commit af128a2bdfdc7c99d425f19239f298ab8cab654c
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Jan 14 18:13:38 2025 +0000
+
+    shaders (still not working)
+
+commit 552d129e31d5a17bdfbef84c24778665958d9641
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Jan 14 15:18:32 2025 +0000
+
+    buttons
+
+commit d1c93fda1e1a3f8582a13f90c82d9583d7d783c5
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Mon Jan 13 14:45:54 2025 +0000
+
+    mouse position
+
+commit 973a09cfbc50e86d54929bb2098e7b810fc78af0
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Sun Jan 12 18:21:09 2025 +0000
+
+    collision
+
+commit fc6f296fe1b3dceef7da40ef9da288fc2609a4d7
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Dec 17 12:54:45 2024 +0000
+
+    Mouse Input
+
+commit 96a3b0e0bf1a0d9464e7d7a47925e2ebc0baff5b
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Fri Dec 13 13:07:18 2024 +0000
+
+    sound done
+
+commit 72aeef0b751d8dfe77eace9330029665294043b1
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Dec 12 14:35:58 2024 +0000
+
+    some more sound
+
+commit 93c8ff8f9958e5d30e5531b83dcffbf70b0873c4
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Dec 10 12:48:57 2024 +0000
+
+    First attempt at audio
+
+commit 8a40d6c75cd568617a895899f3bee632fcbbe00f
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Fri Dec 6 13:29:02 2024 +0000
+
+    inPUT
+
+commit 7c0cd70d70161880cd615d38c0e2ef9799180bbf
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Dec 3 12:49:53 2024 +0000
+
+    resources works
+
+commit 914af87fc752e1be22c9f943a78f484c4ce98c74
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Fri Nov 29 14:00:28 2024 +0000
+
+    Transform and attempt at imput
+
+commit d7845235f1caa64b937912e736b32da30de65f96
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Nov 28 13:04:14 2024 +0000
+
+    translate attempt
+
+commit ccb6150e71fb964a4406bfdcd089cd97b66a159e
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Wed Nov 27 15:49:25 2024 +0000
+
+    couple models and fixed loader
+
+commit 8e6ebde27b531626889cf8d728c1747fc78b1937
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Nov 26 11:25:53 2024 +0000
+
+    SetPath
+
+commit 52252735a6107bfb3b1b22b4f24ba2848102359a
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Nov 21 14:39:44 2024 +0000
+
+    huh
+
+commit aedb9b4bf11f5c15d0a5eab8964ecd8c95c133c1
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Nov 21 12:59:45 2024 +0000
+
+    Something
+
+commit 0aace635c15d3e0b160e52b70fa7fd2e2c374500
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Nov 14 14:23:25 2024 +0000
+
+    resources attempt
+
+commit c320e7f0d3965636ee4d855c9c5db2476cde087d
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Nov 12 12:57:59 2024 +0000
+
+    Model now loads
+
+commit d8847cfedab9f193d6730d57be435abe4a95bc2a
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Tue Nov 5 16:45:43 2024 +0000
+
+    triangle renderer
+
+commit c03453de34f198aebe5372408b06c69450cb99af
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Oct 31 13:11:55 2024 +0000
+
+    window loop
+
+commit a2b8125c41355548435200ee60bfb50d9dd023f6
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Oct 24 13:02:03 2024 +0100
+
+    Window
+
+commit 17111f4c8ecdc360696aef7ff31123e7188b7332
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Oct 17 13:03:29 2024 +0100
+
+    glm
+
+commit a00f622450a1be8827abf3a5b7523745a1f3724f
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Oct 10 12:57:46 2024 +0100
+
+    ECS
+
+commit fbb5174a75e1c1734529d04a31652305197707ab
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:32:50 2024 +0100
+
+    gitingnore and stuff
+
+commit 807c9c75a95ce7f7638bff892422cda5825afe1b
+Author: Fin Hall (s5509190) <s5509190@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:21:25 2024 +0100
+
+    Initial Push
+
+commit e1335eb558da072e99e9673a3b2693a712af1e93
+Author: fiiin-eth <100934991+fiiin-eth@users.noreply.github.com>
+Date:   Thu Oct 3 12:10:35 2024 +0100
+
+    Initial commit

@@ -1,0 +1,5 @@
+<map id="TurboHybridEngine::Component::get_transform" name="TurboHybridEngine::Component::get_transform">
+<area shape="rect" id="Node000001" title="Retrieves the transform component of the entity." alt="" coords="5,5,182,48"/>
+<area shape="rect" id="Node000002" href="$struct_turbo_hybrid_engine_1_1_component.html#a12a60c6945a865b40ba0e543c570f383" title="Retrieves the entity to which this component is attached." alt="" coords="230,5,383,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,24,214,24,214,29,182,29"/>
+</map>

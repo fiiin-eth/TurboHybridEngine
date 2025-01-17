@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['shader_0',['Shader',['../class_render_1_1_shader.html',1,'Render']]],
+  ['shader_0',['Shader',['../struct_render_1_1_shader.html',1,'Render']]],
   ['sound_1',['Sound',['../struct_turbo_hybrid_engine_1_1_sound.html',1,'TurboHybridEngine']]],
   ['stb_5fvorbis_2',['stb_vorbis',['../structstb__vorbis.html',1,'']]],
   ['stb_5fvorbis_5falloc_3',['stb_vorbis_alloc',['../structstb__vorbis__alloc.html',1,'']]],

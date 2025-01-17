@@ -1,0 +1,7 @@
+<map id="TurboHybridEngine::Component::get_transform" name="TurboHybridEngine::Component::get_transform">
+<area shape="rect" id="Node000001" title="Retrieves the transform component of the entity." alt="" coords="220,39,396,81"/>
+<area shape="rect" id="Node000002" href="$struct_turbo_hybrid_engine_1_1_component.html#a902d534c80e72a31b2db5231eeaf8924" title="Retrieves the position of the entity." alt="" coords="5,5,172,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,47,172,42,173,37,205,42"/>
+<area shape="rect" id="Node000003" href="$struct_turbo_hybrid_engine_1_1_rigidbody.html#a30ae0e895188f06e945085fc0f008dfc" title="Called every frame to update the component. Override this method for custom update logic." alt="" coords="18,72,159,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,78,159,85,159,80,204,73"/>
+</map>

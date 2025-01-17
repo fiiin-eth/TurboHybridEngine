@@ -7,7 +7,7 @@ namespace TurboHybridEngine {
 	struct Component;
 
 	/**
-	* @class Entity
+	* @struct Entity
 	* @brief Represents an entity in the game engine that can have multiple components attached.
 	*/
 	struct Entity {
@@ -59,6 +59,7 @@ namespace TurboHybridEngine {
 
 	private:
 		friend struct TurboHybridEngine::Core;
+		friend struct Rigidbody;
 
 		std::weak_ptr<Core> m_core; ///< Weak pointer to the core engine instance.
 		std::weak_ptr<Entity> m_self; ///< Weak pointer to the entity itself.

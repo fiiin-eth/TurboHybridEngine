@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 namespace Render {
-	class Shader {
+	struct Shader {
 
 	public:
 		Shader(bool GUI);

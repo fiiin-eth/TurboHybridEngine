@@ -111,11 +111,11 @@ $(function(){initNavTree('_entity_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>TurboHybridEngine {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">struct </span><a class="code hl_class" href="struct_turbo_hybrid_engine_1_1_core.html">Core</a>;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">struct </span><a class="code hl_class" href="struct_turbo_hybrid_engine_1_1_component.html">Component</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_turbo_hybrid_engine_1_1_core.html">Core</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_turbo_hybrid_engine_1_1_component.html">Component</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
 <div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_turbo_hybrid_engine_1_1_entity.html">   13</a></span>    <span class="keyword">struct </span><a class="code hl_class" href="struct_turbo_hybrid_engine_1_1_entity.html">Entity</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_turbo_hybrid_engine_1_1_entity.html">   13</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_turbo_hybrid_engine_1_1_entity.html">Entity</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
@@ -151,7 +151,7 @@ $(function(){initNavTree('_entity_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        std::shared_ptr&lt;Core&gt; <a class="code hl_function" href="struct_turbo_hybrid_engine_1_1_entity.html#ad4c0b5549235c16a32a2841ff991180d">get_core</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_class" href="struct_turbo_hybrid_engine_1_1_core.html">TurboHybridEngine::Core</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_turbo_hybrid_engine_1_1_core.html">TurboHybridEngine::Core</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::weak_ptr&lt;Core&gt; m_core; </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        std::weak_ptr&lt;Entity&gt; m_self; </div>
@@ -167,8 +167,8 @@ $(function(){initNavTree('_entity_8h_source.html',''); initResizable(true); });
 </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
-<div class="ttc" id="astruct_turbo_hybrid_engine_1_1_component_html"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_component.html">TurboHybridEngine::Component</a></div><div class="ttdoc">Base class for all components that can be attached to an entity.</div><div class="ttdef"><b>Definition</b> Component.h:17</div></div>
-<div class="ttc" id="astruct_turbo_hybrid_engine_1_1_core_html"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_core.html">TurboHybridEngine::Core</a></div><div class="ttdoc">The main engine class responsible for initializing and running the engine.</div><div class="ttdef"><b>Definition</b> Core.h:17</div></div>
+<div class="ttc" id="astruct_turbo_hybrid_engine_1_1_component_html"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_component.html">TurboHybridEngine::Component</a></div><div class="ttdoc">Base struct for all components that can be attached to an entity.</div><div class="ttdef"><b>Definition</b> Component.h:17</div></div>
+<div class="ttc" id="astruct_turbo_hybrid_engine_1_1_core_html"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_core.html">TurboHybridEngine::Core</a></div><div class="ttdoc">The main engine struct responsible for initializing and running the engine.</div><div class="ttdef"><b>Definition</b> Core.h:17</div></div>
 <div class="ttc" id="astruct_turbo_hybrid_engine_1_1_entity_html"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_entity.html">TurboHybridEngine::Entity</a></div><div class="ttdoc">Represents an entity in the game engine that can have multiple components attached.</div><div class="ttdef"><b>Definition</b> Entity.h:13</div></div>
 <div class="ttc" id="astruct_turbo_hybrid_engine_1_1_entity_html_a1a09fa8cb993111c76ca9d7713dfb555"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_entity.html#a1a09fa8cb993111c76ca9d7713dfb555">TurboHybridEngine::Entity::get_component</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; get_component()</div><div class="ttdoc">Retrieves a component of the specified type attached to the entity.</div><div class="ttdef"><b>Definition</b> Entity.h:41</div></div>
 <div class="ttc" id="astruct_turbo_hybrid_engine_1_1_entity_html_a8890d2d64000176335a7b6abea20a1c0"><div class="ttname"><a href="struct_turbo_hybrid_engine_1_1_entity.html#a8890d2d64000176335a7b6abea20a1c0">TurboHybridEngine::Entity::add_component</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; add_component()</div><div class="ttdoc">Adds a new component of the specified type to the entity.</div><div class="ttdef"><b>Definition</b> Entity.h:22</div></div>

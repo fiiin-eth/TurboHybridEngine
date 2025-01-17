@@ -1,0 +1,6 @@
+<map id="TurboHybridEngine::ModelRenderer" name="TurboHybridEngine::ModelRenderer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,146,139"/>
+<area shape="rect" id="Node000002" href="$struct_turbo_hybrid_engine_1_1_component.html" title="Base struct for all components that can be attached to an entity." alt="" coords="5,5,146,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,63,70,96,65,96,64,64"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="87,64,86,96,81,96,82,63"/>
+</map>

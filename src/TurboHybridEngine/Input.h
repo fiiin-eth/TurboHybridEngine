@@ -4,12 +4,12 @@
 
 namespace TurboHybridEngine {
 
-	class Keyboard;
+	struct Keyboard;
 	struct Mouse;
 
 	struct Core;
 
-	class Input {
+	struct Input {
 
 	public:
 

@@ -14,18 +14,18 @@ namespace TurboHybridEngine {
 		face.a.position = glm::vec3(1.0f, 0.0f, 0.0f);
 		face.b.position = glm::vec3(0.0f, 1.0f, 0.0f);
 		face.c.position = glm::vec3(0.0f, 0.0f, 0.0f);
-		face.a.texcoord = glm::vec2(1.0f, 0.0f);
-		face.b.texcoord = glm::vec2(0.0f, 1.0f);
-		face.c.texcoord = glm::vec2(0.0f, 0.0f);
+		face.a.texcoord = glm::vec2(1.0f, 1.0f);
+		face.b.texcoord = glm::vec2(0.0f, 0.0f);
+		face.c.texcoord = glm::vec2(0.0f, 1.0f);
 		m_mesh->add(face);
 
 		Render::Face face2;
 		face2.a.position = glm::vec3(1.0f, 0.0f, 0.0f);
 		face2.b.position = glm::vec3(1.0f, 1.0f, 0.0f);
 		face2.c.position = glm::vec3(0.0f, 1.0f, 0.0f);
-		face2.a.texcoord = glm::vec2(1.0f, 0.0f);
-		face2.b.texcoord = glm::vec2(1.0f, 1.0f);
-		face2.c.texcoord = glm::vec2(0.0f, 1.0f);
+		face2.a.texcoord = glm::vec2(1.0f, 1.0f);
+		face2.b.texcoord = glm::vec2(1.0f, 0.0f);
+		face2.c.texcoord = glm::vec2(0.0f, 0.0f);
 		m_mesh->add(face2);
 	}
 

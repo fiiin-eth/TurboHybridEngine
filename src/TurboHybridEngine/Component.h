@@ -5,14 +5,14 @@ namespace TurboHybridEngine {
 
 
 	struct Entity;
-	class Keyboard;
+	struct Keyboard;
 	struct Mouse;
 	struct Transform;
 	struct GUI;
 
 	/**
-	* @class Component
-	* @brief Base class for all components that can be attached to an entity.
+	* @struct Component
+	* @brief Base struct for all components that can be attached to an entity.
 	*/
 	struct Component {
 	public:
@@ -76,6 +76,8 @@ namespace TurboHybridEngine {
 		*/
 		virtual void on_gui();
 
+		virtual void on_collision();
+
 	private:
 		friend struct Entity;
 
@@ -95,6 +97,8 @@ namespace TurboHybridEngine {
 		* @brief Internal GUI method called by the engine.
 		*/
 		void gui();
+
+		void collision();
 	};
 
 }

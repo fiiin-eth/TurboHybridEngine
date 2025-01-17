@@ -58,7 +58,7 @@ namespace TurboHybridEngine {
 
 			m_input->Update();
 
-			glClearColor(1, 1, 1, 1);
+			glClearColor(0, 0.5f, 1, 1);
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 			for (size_t ei = 0; ei < m_entities.size(); ++ei) {

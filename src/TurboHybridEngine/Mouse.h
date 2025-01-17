@@ -6,7 +6,7 @@
 
 namespace TurboHybridEngine {
 
-	class Input;
+	struct Input;
 
 	struct Mouse {
 
@@ -24,7 +24,7 @@ namespace TurboHybridEngine {
 		int get_yPosition() { return m_yPos; }
 
 	private:
-		friend class Input;
+		friend struct Input;
 
 		void MouseReleased(int _mouse) {
 
